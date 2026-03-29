@@ -1,0 +1,39 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper function for user authentication
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // 1. User Profiles
+    match /users/{userId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // 2. Bus Passes
+    match /passes/{passId} {
+      // Drivers and Admins need to read all passes for scanning
+      // Passengers can only read their own pass (uid == passId)
+      allow read: if isAuthenticated();
+      
+      // Only the passenger can create/update their own pass document
+      allow create, update: if isAuthenticated() && request.auth.uid == passId;
+      allow delete: if false; // Prevention of accidental deletion
+    }
+
+    // 3. Scan Logs
+    match /scan_logs/{logId} {
+      allow create: if isAuthenticated();
+      allow read: if isAuthenticated(); // Admins/Drivers can review logs
+    }
+    
+    // 4. Bus Trips & Locations
+    match /trips/{tripId} {
+      allow read: if true; // Public can see bus routes
+      allow write: if isAuthenticated(); // Only drivers can update
+    }
+  }
+}
