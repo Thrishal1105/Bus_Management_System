@@ -37,8 +37,8 @@ Follow these steps to get a local development environment running:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/bus-app.git
-cd bus-app
+git clone https://github.com/Thrishal1105/Bus_Management_System.git
+cd Bus_Management_System
 ```
 
 ### 2. Install Dependencies
