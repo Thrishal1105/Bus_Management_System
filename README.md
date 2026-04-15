@@ -30,7 +30,18 @@ A professional, role-based mobile and web application designed for real-time bus
 - **Security**: Custom Firestore Security Rules + Role-Based Access Control
 
 ---
+## Screenshot
 
+<p align = “center”>
+  <img src="https://github.com/Thrishal1105/Bus_Management_System/blob/e0943e7f31f4efd1886b008122bdd5283ca4e53f/images/1000131619.jpg" width="150" height="350" />
+  <img src="https://github.com/Thrishal1105/Bus_Management_System/blob/e0943e7f31f4efd1886b008122bdd5283ca4e53f/images/1000131620.jpg" width="150" height="350" />
+  <img src="https://github.com/Thrishal1105/Bus_Management_System/blob/e0943e7f31f4efd1886b008122bdd5283ca4e53f/images/1000131621.jpg" width="150" height="350" />
+  <img src="https://github.com/Thrishal1105/Bus_Management_System/blob/e0943e7f31f4efd1886b008122bdd5283ca4e53f/images/1000131622.jpg" width="150" height="350" />
+  <img src="https://github.com/Thrishal1105/Bus_Management_System/blob/e0943e7f31f4efd1886b008122bdd5283ca4e53f/images/1000131623.jpg" width="150" height="350" />
+  <img src="https://github.com/Thrishal1105/Bus_Management_System/blob/e0943e7f31f4efd1886b008122bdd5283ca4e53f/images/1000131624.jpg" width="150" height="350" />
+  <img src="https://github.com/Thrishal1105/Bus_Management_System/blob/e0943e7f31f4efd1886b008122bdd5283ca4e53f/images/1000131625.png" width="150" height="350" />
+  <img src="https://github.com/Thrishal1105/Bus_Management_System/blob/e0943e7f31f4efd1886b008122bdd5283ca4e53f/images/1000131626.jpg" width="150" height="350" />
+</p>
 ## 🚀 Step-by-Step Installation & Setup
 
 Follow these steps to get a local development environment running:
